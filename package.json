@@ -1,7 +1,7 @@
 {
   "name": "confirm-extended-dialog",
   "description": "Confirm dialog is a web component that displays a dialog box with a message and two buttons, OK and Cancel. In adition it can be used to execute actions when the user clicks on the buttons by adding event listeners.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
