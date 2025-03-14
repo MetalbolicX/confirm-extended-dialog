@@ -7,7 +7,7 @@ Confirm dialog is a web component that displays a dialog box that can be customi
 Download from npm:
 
 ```sh
-npm i confirm-dialog
+npm i confirm-extended-dialog
 ```
 
 ## Usage
