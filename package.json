@@ -1,0 +1,43 @@
+{
+  "name": "confirm-dialog",
+  "description": "Confirm dialog is a web component that displays a dialog box with a message and two buttons, OK and Cancel. In adition it can be used to execute actions when the user clicks on the buttons by adding event listeners.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "dist": "bun build --entrypoints ./src/confirm-dialog.ts --outdir ./dist --target browser --format esm --minify",
+    "build": "tsup"
+  },
+  "author": {
+    "name": "José Martínez Santana"
+  },
+  "keywords": [
+    "web-components",
+    "dialog",
+    "confirm",
+    "modal",
+    "custom-elements",
+    "web-component"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}

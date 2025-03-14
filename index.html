@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm dialog web component</title>
+  </head>
+  <body>
+    <confirm-dialog>
+      <h1 slot="title">Are you sure?</h1>
+      <p slot="description">This action cannot be undone.</p>
+    </confirm-dialog>
+    <script type="module">
+      import "./src/confirm-dialog.ts";
+    </script>
+  </body>
+</html>
