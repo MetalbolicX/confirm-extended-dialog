@@ -1,4 +1,4 @@
-export class ConfirmDialog extends HTMLElement {
+export class ConfirmExtendedDialog extends HTMLElement {
   #dialog: HTMLDialogElement;
   #confirmButton: HTMLButtonElement;
   #closeButton: HTMLButtonElement;
@@ -11,13 +11,13 @@ export class ConfirmDialog extends HTMLElement {
 
     // Append styles
     const style = document.createElement("style");
-    style.textContent = ConfirmDialog.styles;
+    style.textContent = ConfirmExtendedDialog.styles;
     style.setAttribute("type", "text/css");
     this.shadowRoot!.append(style);
 
     // Append template content
     const template = document.createElement("template");
-    template.innerHTML = ConfirmDialog.template;
+    template.innerHTML = ConfirmExtendedDialog.template;
     this.shadowRoot!.append(template.content.cloneNode(true));
 
     // Get elements
@@ -212,11 +212,11 @@ export class ConfirmDialog extends HTMLElement {
    * @param {string} [name="confirm-dialog"] - The name of the custom element. Default is "confirm-dialog".
    * @example
    * ```ts
-   * ConfirmDialog.defineCustomDialog("custom-dialog");
+   * ConfirmExtendedDialog.defineCustomDialog("custom-dialog");
    * ```
    */
-  public static defineCustomDialog(name: string = "confirm-dialog"): void {
-    if (!customElements.get(name)) customElements.define(name, ConfirmDialog);
+  public static defineCustomDialog(name: string = "confirm-extended-dialog"): void {
+    if (!customElements.get(name)) customElements.define(name, ConfirmExtendedDialog);
   }
 
   /**
@@ -269,7 +269,7 @@ export class ConfirmDialog extends HTMLElement {
    * Opens the custom dialog and displays it on the screen.
    * @example
    * ```ts
-   * const dialog = document.getElementById("dialog") as ConfirmDialog;
+   * const dialog = document.getElementById("dialog") as ConfirmExtendedDialog;
    * dialog.show();
    * ```
    */
@@ -282,7 +282,7 @@ export class ConfirmDialog extends HTMLElement {
    * Closes the custom dialog and hides it from the screen.
    * @example
    * ```ts
-   * const dialog = document.getElementById("dialog") as ConfirmDialog;
+   * const dialog = document.getElementById("dialog") as ConfirmExtendedDialog;
    * dialog.hide();
    * ```
    */
@@ -514,4 +514,4 @@ export class ConfirmDialog extends HTMLElement {
   }
 }
 
-ConfirmDialog.defineCustomDialog();
+ConfirmExtendedDialog.defineCustomDialog();

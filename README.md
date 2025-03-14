@@ -18,7 +18,7 @@ Once it is installed, import it in the HTML file using the `script` tag.
 
 ```html
 <script type="module">
-    import "confirm-dialog";
+    import "confirm-extended-dialog";
 </script>
 ```
 
