@@ -1,1 +1,1 @@
-export { ConfirmDialog } from "./confirm-dialog.ts";
+export { ConfirmExtendedDialog } from "./confirm-extended-dialog.ts";
