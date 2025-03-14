@@ -1,7 +1,7 @@
 # Confirm Dialog
 
 ## Description
-Confirm dialog is a web component that displays a dialog box that can be customized in the description to display buttons of *Confirm* and *Cancel*. Finally, the dialog can execute actions after clicking the *Confirm* or *Cancel* button.
+Confirm extended dialog is a web component that displays a dialog box that can be customized in the description to display buttons of *Confirm* and *Cancel*. Finally, the dialog can execute actions after clicking the *Confirm* or *Cancel* button.
 
 ## Installation
 Download from npm:
@@ -27,14 +27,14 @@ Once it is installed, import it in the HTML file using the `script` tag.
 To set the title and description, use the `slot` attribute in the HTML. For the **title**, use `slot="title"` and for **description**, use `slot="description"`. You can use one or the other or both.
 
 ```html
-<confirm-dialog>
+<confirm-extended-dialog>
     <h1 slot="title">Do you want to continue?</h1>
     <p slot="description">The changes cannot be undone.</p>
-</confirm-dialog>
+</confirm-extended-dialog>
 ```
 ### Attributes
 
-The `confirm-dialog` web component has the following attributes:
+The `confirm-extended-dialog` web component has the following attributes:
 
 1. `confirm-label`. Customizes the text of the confirmation button. By default, it is `Confirm`.
 2. `cancel-label`. Customizes the text of the cancel button. By default, it is `Cancel`.
@@ -44,34 +44,34 @@ The `confirm-dialog` web component has the following attributes:
 #### Customize the text of the labels and the icon
 
 ```html
-<confirm-dialog confirm-label="Yes" cancel-label="No" icon="warning">
+<confirm-extended-dialog confirm-label="Yes" cancel-label="No" icon="warning">
     <h1 slot="title">Do you want to continue?</h1>
     <p slot="description">The changes cannot be undone.</p>
-</confirm-dialog>
+</confirm-extended-dialog>
 ```
 
 #### Open immediately
 
 ```html
-<confirm-dialog open="true">
+<confirm-extended-dialog open="true">
     <h1 slot="title">Do you want to continue?</h1>
     <p slot="description">The changes cannot be undone.</p>
-</confirm-dialog>
+</confirm-extended-dialog>
 ```
 
 ### Listeners
 
-The dialog web component can execute an action when the confirm or cancel button is clicked. Let's see each case:
+The confirm extended dialog web component can execute an action when the confirm or cancel button is clicked. Let's see each case:
 
 ```js
 // When the confirm button is clicked, an alert message is shown
-const dialog = document.querySelector("confirm-dialog");
+const dialog = document.querySelector("confirm-extended-dialog");
 dialog.addEventListener("confirm", () => alert("Hello world!!"));
 ```
 
 ```js
 // When the cancel button is clicked, the dialog is immediately closed and an alert message is shown.
-const dialog = document.querySelector("confirm-dialog");
+const dialog = document.querySelector("confirm-extended-dialog");
 dialog.addEventListener("cancel", () => alert("Goodbye world!!"));
 ```
 
