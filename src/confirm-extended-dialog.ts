@@ -1,4 +1,4 @@
-export class ConfirmExtendedDialog extends HTMLElement {
+class ConfirmExtendedDialog extends HTMLElement {
   #dialog: HTMLDialogElement;
   #confirmButton: HTMLButtonElement;
   #closeButton: HTMLButtonElement;
