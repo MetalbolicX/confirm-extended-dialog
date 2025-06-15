@@ -22,6 +22,8 @@ Once it is installed, import it in the HTML file using the `script` tag.
 </script>
 ```
 
+> ⚠ **Warning:** Be careful.
+
 ### Title and description
 
 To set the title and description, use the `slot` attribute in the HTML. For the **title**, use `slot="title"` and for **description**, use `slot="description"`. You can use one or the other or both.
@@ -75,12 +77,54 @@ const dialog = document.querySelector("confirm-extended-dialog");
 dialog.addEventListener("cancel", () => alert("Goodbye world!!"));
 ```
 
-## Technologies
+## 📚 Documentation
 
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" target="_blank" rel="noreferrer"> <img src="https://web-components-resources.appspot.com/static/logo.svg" alt="web component" width="40" height="40"/> </a> </p>
+<div style="text-align: center;">
+  [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://metalbolicx.github.io/confirm-extended-dialog/#/api-reference)
+</div>
+
+## Technologies Used
+
+<table style="border: none;">
+  <tr>
+    <td style="text-align: center;">
+      <a href="https://www.w3.org/html/" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="42" height="42" /><br/>
+        <b>HTML</b><br/>
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.w3schools.com/css/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="css3" width="42" height="42" /><br/>
+        <b>CSS</b><br/>
+      </a>
+    </td>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" width="42" height="42" /><br/>
+        <b>JavaScript</b><br/>
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.typescriptlang.org/" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="ts" width="42" height="42" /><br/>
+        <b>TypeScript</b><br/>
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" target="_blank">
+        <img src="https://web-components-resources.appspot.com/static/logo.svg" alt="web components" width="42" height="42" /><br/>
+        <b>Web components</b><br/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Contributing
-Any contribution is welcome.
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-MIT licensed.
+
+Released under [MIT](/LICENSE) by [@MetalbolicX](https://github.com/MetalbolicX).
