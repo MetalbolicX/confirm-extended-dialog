@@ -2,4 +2,4 @@
 
 ## What problem confirm-extended-dialog solves?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quis id nam labore, ad temporibus corporis tempore praesentium molestias animi fuga rerum nesciunt ex eveniet numquam quibusdam? Sunt, laborum veritatis!
+Confirm extended dialog is a web component that displays a dialog box that can be customized in the description to display buttons of *Confirm* and *Cancel*. Finally, the dialog can execute actions after clicking the *Confirm* or *Cancel* button.

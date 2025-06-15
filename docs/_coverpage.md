@@ -1,8 +1,6 @@
-![logo](_media/logo.svg)
+# Confirm Extended Dialog
 
-> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, dolores optio. Voluptates minima tempora ab perspiciatis! Voluptate, blanditiis. Illo, repellat. Quo nam ex, voluptatem voluptatum quia perferendis est explicabo at?
-
-![ReScript version](https://img.shields.io/badge/ReScript-%3E%3D11.0.0-blue)
+> A customizable web component that displays a confirmation dialog with extended features.
 
 [Getting Started](/getting-started)
 [API Reference](/api-reference)
