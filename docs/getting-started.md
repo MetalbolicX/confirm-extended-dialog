@@ -5,6 +5,7 @@
 To work with Node.js, you must have version 14 or higher installed. This is a requirement for ReScript version 11.
 
 Check your Node.js version with the following command:
+
 ```sh
 node -v
 ```
@@ -19,27 +20,32 @@ To create a new project with Vite, you can use the following commands:
 
 <!-- tabs:start -->
 
-#### **npm**
+### **npm**
+
 ```sh
 npm create vite@latest
 ```
 
-#### **pnpm**
+### **pnpm**
+
 ```sh
 pnpm create vite
 ```
 
-#### **yarn**
+### **yarn**
+
 ```sh
 yarn create vite
 ```
 
-#### **bun**
+### **bun**
+
 ```sh
 bun create vite
 ```
 
-#### **deno**
+### **deno**
+
 ```sh
 deno init --npm vite
 ```
@@ -57,26 +63,31 @@ To install the `confirm-extended-dialog` web component using any JavaScript pack
 <!-- tabs:start -->
 
 #### **npm**
+
 ```sh
 npm i confirm-extended-dialog
 ```
 
 #### **pnpm**
+
 ```sh
 pnpm add confirm-extended-dialog
 ```
 
 #### **yarn**
+
 ```sh
 yarn add confirm-extended-dialog
 ```
 
 #### **bun**
+
 ```sh
 bun add confirm-extended-dialog
 ```
 
 #### **deno**
+
 ```sh
 deno add --npm confirm-extended-dialog
 ```
@@ -90,16 +101,19 @@ import "confirm-extended-dialog";
 ```
 
 ### Include via CDN
+
 To include the `confirm-extended-dialog` web component via a CDN, you can use the following script tag in your HTML file:
 
 <!-- tabs:start -->
 
 #### **jsdelivr**
+
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/npm/confirm-extended-dialog/dist/confirm-extended-dialog.js" lang="javascript"></script>
 ```
 
 #### **unpkg**
+
 ```html
 <script type="module" src="https://unpkg.com/confirm-extended-dialog/dist/confirm-extended-dialog.js" lang="javascript"></script>
 ```
@@ -125,4 +139,3 @@ To include the `confirm-extended-dialog` web component via a CDN, you can use th
   </body>
 </html>
 ```
-

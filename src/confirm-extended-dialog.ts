@@ -492,6 +492,13 @@ class ConfirmExtendedDialog extends HTMLElement {
   /**
    * Sets a custom function to be called when the confirm button is clicked.
    * @param {(() => void) | null} callback - The confirm callback.
+   * @example
+   * ```ts
+   * const dialog = document.getElementById("dialog") as ConfirmExtendedDialog;
+   * dialog.onConfirm = () => {
+   *   console.log("Confirmed!");
+   * };
+   * ```
    */
   public set onConfirm(callback: (() => void) | null) {
     this.#onConfirm = callback;
@@ -508,6 +515,13 @@ class ConfirmExtendedDialog extends HTMLElement {
   /**
    * Sets a custom function to be called when the cancel button is clicked.
    * @param {(() => void) | null} callback - The cancel callback.
+   * @example
+   * ```ts
+   * const dialog = document.getElementById("dialog") as ConfirmExtendedDialog;
+   * dialog.onCancel = () => {
+   *   console.log("Cancelled!");
+   * };
+   * ```
    */
   public set onCancel(callback: (() => void) | null) {
     this.#onCancel = callback;

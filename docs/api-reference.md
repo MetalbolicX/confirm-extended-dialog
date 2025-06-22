@@ -86,6 +86,8 @@ const dialog = document.querySelector("confirm-extended-dialog");
 dialog.addEventListener("confirm", () => alert("Hello world!!"));
 ```
 
+?> You can also set the `confirm` event listener using the `onConfirm` property of the dialog.
+
 ### `cancel`
 
 Fired when the cancel button is clicked. The event does not carry any data.
@@ -95,3 +97,29 @@ Fired when the cancel button is clicked. The event does not carry any data.
 const dialog = document.querySelector("confirm-extended-dialog");
 dialog.addEventListener("cancel", () => alert("Goodbye world!!"));
 ```
+
+?> You can also set the `cancel` event listener using the `onCancel` property of the dialog.
+
+## Methods
+
+### `show()`
+
+Opens the dialog programmatically. This method can be called on the dialog element to display it.
+
+```js
+const dialog = document.querySelector("confirm-extended-dialog");
+dialog.show();
+```
+
+?> You can also open the dialog by setting the `open` attribute to `true`.
+
+### `hide()`
+
+Closes the dialog programmatically. This method can be called on the dialog element to hide it.
+
+```js
+const dialog = document.querySelector("confirm-extended-dialog");
+dialog.hide();
+```
+
+?> You can also close the dialog by setting the `open` attribute to `false`.
