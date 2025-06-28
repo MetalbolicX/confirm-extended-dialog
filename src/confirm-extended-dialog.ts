@@ -33,16 +33,18 @@ class ConfirmExtendedDialog extends HTMLElement {
   public static get template(): string {
     return /*html*/ `
       <dialog class="confirm-dialog">
-        <link rel="stylesheet" href="../src/styles.css" type="text/css">
+        <link rel="stylesheet" href="../styles/styles.css" type="text/css">
         <form method="dialog">
           <fieldset class="confirm-dialog__header">
             <legend>
-              <span class="confirm-dialog__header-icon">
+              <div class="confirm-dialog__header-icon">
                 <svg viewBox="0 0 24 24"><path></path></svg>
-              </span>
+              </div>
               <slot name="title" class="confirm-dialog__header-title"></slot>
             </legend>
-            <slot name="description" class="confirm-dialog__header-description"></slot>
+          </fieldset>
+          <fieldset class="confirm-dialog__content">
+            <slot name="description" class="confirm-dialog__content-description"></slot>
           </fieldset>
           <fieldset class="confirm-dialog__actions">
             <button type="submit" id="confirm-dialog__actions-confirm">Confirm</button>
@@ -142,7 +144,6 @@ class ConfirmExtendedDialog extends HTMLElement {
    */
   public hide(): void {
     this._dialog.classList.remove("show");
-    setTimeout(() => this._dialog.close(), 300);
   }
 
   /**

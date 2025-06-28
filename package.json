@@ -5,7 +5,8 @@
   "main": "dist/confirm-extended-dialog.js",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "styles"
   ],
   "scripts": {
     "docs": "docsify serve docs",
