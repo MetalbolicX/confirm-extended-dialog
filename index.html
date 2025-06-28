@@ -6,10 +6,11 @@
     <title>Confirm dialog web component</title>
   </head>
   <body>
-    <confirm-extended-dialog open="true">
+    <confirm-extended-dialog open="true" icon="warning">
       <h1 slot="title">Are you sure?</h1>
       <p slot="description">This action cannot be undone.</p>
     </confirm-extended-dialog>
-    <script type="module" src="./dist/confirm-extended-dialog.js"></script>
+    <!-- <script type="module" src="./dist/confirm-extended-dialog.js"></script> -->
+    <script src="./src/confirm-extended-dialog.ts"></script>
   </body>
 </html>

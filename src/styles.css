@@ -15,7 +15,7 @@
     animation: fade-in 0.5s ease-out;
 
     &::backdrop {
-      background: rgba(0, 0, 0, 0.35);
+      background-color: rgba(0, 0, 0, 0.6);
     }
   }
 

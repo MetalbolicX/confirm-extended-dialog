@@ -37,12 +37,10 @@ class ConfirmExtendedDialog extends HTMLElement {
         <form method="dialog">
           <fieldset class="confirm-dialog__header">
             <legend>
-              <slot name="title" class="confirm-dialog__header-title"></slot>
               <span class="confirm-dialog__header-icon">
-                <svg viewBox="0 0 24 24">
-                  <path></path>
-                </svg>
+                <svg viewBox="0 0 24 24"><path></path></svg>
               </span>
+              <slot name="title" class="confirm-dialog__header-title"></slot>
             </legend>
             <slot name="description" class="confirm-dialog__header-description"></slot>
           </fieldset>
