@@ -1,3 +1,5 @@
+// import styles from "./styles.css" with { type: "css" };
+
 class ConfirmExtendedDialog extends HTMLElement {
   #dialog: HTMLDialogElement;
   #confirmButton: HTMLButtonElement;
@@ -8,12 +10,6 @@ class ConfirmExtendedDialog extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-
-    // Append styles
-    const style = document.createElement("style");
-    style.textContent = ConfirmExtendedDialog.styles;
-    style.setAttribute("type", "text/css");
-    this.shadowRoot!.append(style);
 
     // Append template content
     const template = document.createElement("template");
@@ -31,153 +27,13 @@ class ConfirmExtendedDialog extends HTMLElement {
   }
 
   /**
-   * Returns the CSS styles for the component.
-   * @returns {string} The CSS styles.
-   */
-  public static get styles(): string {
-    return /*css*/ `
-      :host {
-        --confirm-color: #4caf50;
-        --confirm-hover-color: #388e3c;
-      }
-
-      .confirm-dialog {
-        width: 30%;
-        border: none;
-        border-radius: 0.5em;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        animation: fade-out 0.5s ease-out;
-
-        &.show {
-          animation: fade-in 0.5s ease-out;
-
-          &::backdrop {
-            background: rgba(0, 0, 0, 0.35);
-          }
-        }
-
-        form {
-          padding: 0.5rem;
-
-          fieldset {
-            border: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          legend {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: bold;
-          }
-
-          slot {
-            text-align: justify;
-          }
-
-          .confirm-dialog__header-title {
-            font-size: 1.5em;
-          }
-
-          .confirm-dialog__header-description {
-            font-size: 1em;
-            padding-left: 0.5em;
-            border-left: 1px solid #888;
-            display: -webkit-box;
-          }
-
-          .confirm-dialog__header-icon {
-            display: inline-block;
-            width: 1.5em;
-            height: 1.5em;
-            margin-left: 1em;
-
-            svg {
-              width: 2em;
-              height: 2em;
-            }
-          }
-
-          .confirm-dialog__actions {
-            display: flex;
-            justify-content: flex-end;
-            gap: 0.5em;
-
-            button {
-              font-size: 1em;
-              padding: 0.5em 1em;
-              border-radius: 0.25em;
-              border: 1px solid transparent;
-
-              &::focus {
-                outline: none;
-                border: 1px solid #888;
-              }
-            }
-          }
-
-          #confirm-dialog__actions-confirm {
-            background-color: var(--confirm-color);
-            color: white;
-
-            &:hover {
-              background-color: var(--confirm-hover-color);
-            }
-          }
-
-          #confirm-dialog__actions-cancel {
-            background-color: #ddd;
-            color: black;
-
-            &:hover {
-              background-color: #ccc;
-            }
-          }
-        }
-      }
-
-      @keyframes fade-in {
-        0% {
-          opacity 0;
-          transform: scaleY(0);
-          display: none;
-          visibility: hidden;
-        }
-        100% {
-          opacity 1;
-          transform: scaleY(1);
-          display: block;
-          visibility: visible;
-        }
-      }
-
-      @keyframes fade-out {
-        0% {
-          opacity: 1;
-          transform: scaleY(1);
-          display: block;
-          visibility: visible;
-        }
-        100% {
-          opacity: 0;
-          transform: scaleY(0);
-          display: none;
-          visibility: hidden;
-        }
-      }
-    }
-    `;
-  }
-
-  /**
    * Returns the HTML template for the component.
    * @returns {string} The HTML template.
    */
   public static get template(): string {
     return /*html*/ `
       <dialog class="confirm-dialog">
+        <link rel="stylesheet" href="../src/styles.css" type="text/css">
         <form method="dialog">
           <fieldset class="confirm-dialog__header">
             <legend>
