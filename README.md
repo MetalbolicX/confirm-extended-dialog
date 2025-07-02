@@ -2,25 +2,33 @@
 
 > A customizable web component that displays a confirmation dialog with extended features.
 
-## Installation
+## Features
 
-Download from npm:
+- Open or close the modal using the `open` attribute.
+- Set event listeners when the modal is confimed or cancelled.
+- Customize the dialog with various properties such as `title`, `description`, `confirm-label`, and `cancel-label`.
+- Use the `icon` attribute to display an icon in the dialog.
+- Supports custom CSS styles for further customization.
 
-```sh
-npm i confirm-extended-dialog
-```
+## 🚀 Quick Installation
 
-## Usage
+### Import from the CDN
 
-### Add in the project
-
-Once it is installed, import it in the HTML file using the `script` tag.
+In your HTML file add a `script` tag to import the web component.
 
 ```html
-<script type="module">
-  import "confirm-extended-dialog";
-</script>
+<script type="module" src="https://unpkg.com/confirm-extended-dialog/dist/confirm-extended-dialog.js" lang="javascript"></script>
 ```
+
+Once it is imported. Use it just by adding the tag. For example:
+
+```html
+<body>
+  <confirm-extended-dialog></confirm-extended-dialog>
+</body>
+```
+
+> 📝 **Note:** For more information about the import in a JavaScript framework such as Vue.js check the documentation.
 
 ## 📚 Documentation
 
@@ -30,9 +38,13 @@ Once it is installed, import it in the HTML file using the `script` tag.
 
 </div>
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## Technologies Used
 
-<table style="border: none;">
+<table>
   <tr>
     <td align="center">
       <a href="https://www.w3.org/html/" target="_blank">
@@ -67,10 +79,6 @@ Once it is installed, import it in the HTML file using the `script` tag.
     </td>
   </tr>
 </table>
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
